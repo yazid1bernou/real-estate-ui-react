@@ -1,30 +1,79 @@
+@import "../../responsive.scss";
 nav {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.left {
-    flex : 3 ;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    .logo {
-      font-weight: bold;
-      font-size: 20px;
-      display: flex;
-      justify-items: center;
-      gap: 10px;
+    a {
+      transition: all 0.4s ease;
 
-      img {
-        width: 28px;
+      @include sm {
+        display: none;
+      }
+      &:hover {
+        scale: 1.05;
       }
     }
-}
-.right {
-    flex:  2 ;
-    display: flex;
-    justify-items: center;
-    justify-content: flex-end;
-    
+    .left {
+      flex : 3 ;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .logo {
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-items: center;
+        gap: 10px;
+        span {
+          @include md {
+            display: none;
+          }
+          @include sm {
+            display: initial;
+          }
+        }
+        img {
+          width: 28px;
+        }
+
+      }
+  }
+  .right {
+      flex:  2 ;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: #fcf5f3;
+      height: 100%;
+      
+      a {
+        padding: 12px 24px;
+        margin: 20px;
+      }
+      .register {
+        background-color: #fece51;
+      }
+      .meneIcon {
+        display: none;
+        @include  sm {
+         display: initial;
+        }
+        img {
+          width: 36px;
+          height: 36px;
+          cursor: pointer;
+        }
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        right: -50%;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 50%;
+      } 
+  }
+  
 }

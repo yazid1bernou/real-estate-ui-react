@@ -9,16 +9,13 @@
     padding-right: 20px;
 
     @include lg {
-        background-color: yellow; 
         max-width: 1280px;
     }
    
     @include md {
-        background-color: green; 
         max-width: 768px;
     }
     @include sm {
-        background-color: red; 
         max-width: 640px;
     }
    
