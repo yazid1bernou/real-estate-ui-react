@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import  './navbar.scss';
 function Navbar () {
+    const [open , setOpen] = useState(false);
+
     return (
         <nav>
             <div className="left">
@@ -16,9 +19,9 @@ function Navbar () {
                 <a href=''>Sign in</a>
                 <a href='' className='register'>Sign up</a>
                 <div className="meneIcon">
-                    <img src="/menu.png" alt="" />
+                    <img src="/menu.png" alt=""  onClick={()=> setOpen(!open)}/>
                 </div>
-                <div className="menu">
+                <div className={open ? "menu active" : "menu"}>
                     <a href=''>Home</a>
                     <a href=''>About</a>
                     <a href=''>Contacts</a>
