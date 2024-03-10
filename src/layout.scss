@@ -18,5 +18,9 @@
     @include sm {
         max-width: 640px;
     }
+
+    .content {
+        background-color: aqua;
+    }
    
 }
