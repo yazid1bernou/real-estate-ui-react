@@ -1,9 +1,9 @@
-import { useState } from 'react'
+
 import './layout.scss';
 import Navbar from "./components/navbar/Navbar";
-import homePage from "./pages/homePage";
+import HomePage from "./pages/HomePage";
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -12,9 +12,9 @@ function App() {
               <Navbar />
            </div>
            <div className="content">
-              <homePage />
+              <HomePage />
            </div>
-          
+           
         </div>
     </>
   )
