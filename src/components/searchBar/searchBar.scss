@@ -35,6 +35,13 @@
             border: none;
             padding: 0px 10px;
             width: 200px;
+
+            @include lg {
+                padding: 0 5px;
+                &:nth-child(2), &:nth-child(3) {
+                    width: 140px;
+                }
+            }
         }
         button {
             border: none;
