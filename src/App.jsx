@@ -1,7 +1,7 @@
 
 import './layout.scss';
 import Navbar from "./components/navbar/Navbar";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/homePage";
 function App() {
   
 
