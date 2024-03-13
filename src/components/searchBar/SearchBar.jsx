@@ -27,7 +27,7 @@ function SearchBar () {
                 <button><img src="/search.png" alt="" /></button> 
             </form>
 
-            <p> State on type : {query.type}</p>
+          
         </div>
       
     )
