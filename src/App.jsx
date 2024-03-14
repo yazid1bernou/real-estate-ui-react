@@ -10,6 +10,7 @@ import {
    Link,
  } from "react-router-dom";
 import ListPage from './pages/listPage/listPage';
+import SinglePage from './pages/singlePage/singlePage';
  
 function App() {
   
@@ -27,6 +28,10 @@ function App() {
             path: "/list",
             element: <ListPage />
           },
+          {
+            path: "/:id",
+            element: <SinglePage />
+          }
         ]
       },
     
